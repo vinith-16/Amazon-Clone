@@ -1,0 +1,504 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("fonts/Amazon\ Ember.ttf") format("truetype");
+}
+
+body {
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+body{
+    background: #dadada;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(20, 20, 42);
+    padding: 10px 20px;
+    color:white;
+    height: 60px;
+}
+a:hover{
+    border:1px solid white;
+    height: 50px;
+    cursor: pointer;
+}
+#img{
+    padding: 0px;
+}
+.nav-country{
+    display: flex;
+    align-items: end;
+    margin-left: 15px;
+    font-size: 13px;
+    color:grey;
+}
+.nav-country:hover{
+    border: 1px solid white;
+    height: 50px;
+    cursor: pointer;
+}
+#location{
+    color:white;
+    font-size: 14px;
+}
+.nav-search{
+    flex:1;
+    display: flex;
+    align-items: center;
+    background: white;
+    color: gray;
+    max-width: 1000px;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+.nav-search-category{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap:5px;
+    background: rgb(216, 214, 214);
+    border-radius: 4px 0 0 4px;
+}
+.nav-search-input{
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
+}
+.nav-search-icon{
+    max-width: 41px;
+    padding:8px;
+    background: rgb(255, 196, 0);
+    border-radius: 0 4px 4px 0;
+}
+.nav-search-icon:hover{
+    cursor: pointer;
+}
+.nav-language{
+    display: flex;
+    align-items: center;
+    gap:2px;
+    font-weight: 600;
+    margin-left: 15px;
+    height: 50px;
+}
+.nav-language:hover{
+    cursor: pointer;
+}
+.nav-account{
+   display: flex;
+    align-items:center;
+    margin-left: 15px;
+    font-size: 12px;
+    gap:2px;
+}
+.nav-account h1{
+    font-size: 17px;
+    
+}
+.nav-orders{
+    align-items: center;
+    margin-left: 15px;
+    font-size: 12px;
+
+}
+.nav-orders:hover{
+    border:1px solid white;
+    height: 50px;
+    cursor: pointer;
+}
+.nav-cart{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 15px;
+    gap:2px;
+}
+.nav-cart:hover{
+    border:1px solid white;
+    height: 50px;
+    cursor: pointer;
+}
+.nav-bottom{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: 11px;
+    padding: 10px 10px;
+    background-color: #232f3e;
+    color:white;
+    height: 40px;
+    
+}
+.nav-menu{
+    display: flex;
+    gap: 4px;
+}
+.nav-menu:hover{
+    border: solid white 1px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+#one:hover{
+    border: solid white 1px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+#two:hover{
+    border: solid white 1px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+#three:hover{
+    border: solid white 1px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+#four:hover{
+    border: solid white 1px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+#five:hover{
+    border: solid white 1px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+#six:hover{
+    border: solid white 1px;
+    width: 160px;
+    height: 30px;
+    cursor: pointer;
+}
+#seven:hover{
+    border: solid white 1px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+#eight:hover{
+    border: solid white 1px;
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+}
+#nine:hover{
+    border: solid white 1px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
+#ten:hover{
+    border: solid white 1px;
+    width: 65px;
+    height: 30px;
+    cursor: pointer;
+}
+#prime:hover{
+    border: solid white 1px;
+    width: 65px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#prime{
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+}
+.header-slider ul{
+    display: flex;
+    overflow-y: hidden;
+}
+.header-image{
+    max-width: 100%;
+    mask-image: linear-gradient(to bottom,black 50%,transparent);
+}
+.header-slider a{
+    position: absolute;
+    top:20%;
+    z-index: 1;
+    padding: 30px 30px;
+    font-size: 250%;
+    background: #ffffff4f;
+    color:#0000007b;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    height: 100px;
+}
+.controls-next{
+   right:0;
+}
+.inside-box-row{
+    display: flex;
+    gap: 10px;
+    height: 130px;
+
+}
+.inside-box-column{
+    font-size: 12px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.box-row{
+    display: flex;
+    gap: 10px;
+    padding:10px;
+    justify-content: space-between;
+    margin: 10px px;
+    
+}
+
+.box-column{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 15px 20px;
+    max-width: 25%;
+    min-height: 200px;
+    background: white ;
+    z-index: 1;
+}
+.readmore{
+    padding:10px;
+    color:rgb(42, 96, 222);
+}
+.header-box{
+    margin-top: -15%;
+}
+.trending-products{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.trending-products a{
+    color:rgb(42,96,222);
+}
+.trending-products-slider .products{
+    display: flex;
+    overflow-y: hidden;
+}
+
+
+.box-trending-products{
+    background: white;
+    margin-left: 12px;
+}
+.trending-products-slider{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.trending-products-slider .products::-webkit-scrollbar{
+    display:none;
+}
+.sports-products{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 40px;
+}
+.sports-products-slider{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.sports-products-slider .product-images{
+    display: flex;
+    overflow-y: hidden;
+}
+.box-sports-products{
+    background: white;
+    margin-left: 12px;
+}
+.sports-products-slider .product-images::-webkit-scrollbar{
+    display:none;
+}
+.inside-box2-row{
+    display: flex;
+    gap: 10px;
+    height: 130px;
+
+}
+.inside-box2-column{
+    font-size: 12px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.box2-row{
+    display: flex;
+    gap: 10px;
+    padding:10px;
+    justify-content: space-between;
+    margin: 10px px;
+    
+}
+
+.box2-column{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 15px 10px;
+    max-width: 30%;
+    min-height: 200px;
+    background: white ;
+    z-index: 1;
+}
+.readmore{
+    padding:10px;
+    color:rgb(42, 96, 222);
+}
+
+.nav-history {
+  padding: 20px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-history a {
+  color: #007185;
+  text-decoration: none;
+  font-weight: bold;
+  height: 30px;
+}
+.nav-history a:hover {
+  text-decoration: underline;
+}
+
+.back-to-top {
+  background-color: #37475a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin: 4px 0;
+  height: 20px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  border: none;
+}
+.footer-lower {
+  background-color: #131a22;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-logo-lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #3a4553;
+}
+
+.logo {
+  width: 100px;
+}
+
+.selectors {
+  display: flex;
+  gap: 10px;
+}
+
+.selector-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #848688;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.footer-links-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.footer-links-bottom div {
+  max-width: 160px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.footer-links-bottom strong {
+  color: white;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  
+}
+
+.footer-copyright a {
+  color: #e1dddd;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright p {
+  color: #e1dddd;
+  margin-top: 10px;
+}
